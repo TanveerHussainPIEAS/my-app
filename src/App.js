@@ -4,6 +4,7 @@ import Greet from './Componets/Greet';
 import Welcome from './Componets/Welcome';
 import Counter from './Componets/Counter';
 import AppHeader from './Componets/Header';
+import ParentComponent from './Componets/ParentComponent';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Greet name='Ali'></Greet>
       <Welcome></Welcome>
       <Counter></Counter>
+      <ParentComponent></ParentComponent>
     </div>
   );
 }
