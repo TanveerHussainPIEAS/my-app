@@ -4,7 +4,7 @@ export class ChildComponent extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.props.greetHandeler}>Call to Parent</button>
+        <button onClick={()=>this.props.greetHandeler('Child-1')}>Call to Parent</button>
       </div>
     )
   }
