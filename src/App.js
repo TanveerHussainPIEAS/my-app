@@ -7,10 +7,12 @@ import ParentComponent from './Componets/ParentComponent';
 import NameListComponent from './Componets/NameListComponent'
 import InLineStyleComponent from './Componets/InLineStyleComponent'
 import FormComponent from './Componets/FormComponent'
+import ResponsiveAppBar from './Componets/ResponsiveAppBar'
 
 function App() {
   return (
     <div className="App">
+      <ResponsiveAppBar></ResponsiveAppBar>
       <FormComponent></FormComponent>
       <AppHeader></AppHeader>
       <Greet name='Tanveer'></Greet>
