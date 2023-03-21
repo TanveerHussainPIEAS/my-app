@@ -51,8 +51,6 @@ class FormComponent extends Component {
                         ></TextField >
                     </div>
                     <div>
-                        {/* <label>Comment</label> */}
-                        {/* <textarea value={this.state.comment} onChange={this.commentHandler}></textarea> */}
                         <TextareaAutosize value={this.state.comment} onChange={this.commentHandler}  label="UserName" variant="outlined" />
                     </div>
 
