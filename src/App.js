@@ -10,14 +10,16 @@ import FormComponent from './Componets/FormComponent'
 import ResponsiveAppBar from './Componets/ResponsiveAppBar'
 import ClickCountComponent from './Componets/ClickCountComponent'
 import HoverCountComponent from './Componets/HoverCountComponent'
+import ApiCallsComponent from './Componets/ApiCallsComponent'
 
 function App() {
   return (
     <div className="App">
       <ResponsiveAppBar></ResponsiveAppBar>
+      <ApiCallsComponent></ApiCallsComponent>
       <ClickCountComponent></ClickCountComponent>
       <HoverCountComponent></HoverCountComponent>
-      {/* <FormComponent></FormComponent>
+      <FormComponent></FormComponent>
       <AppHeader></AppHeader>
       <Greet name='Tanveer'></Greet>
       <Greet name='Ali'></Greet>
@@ -25,7 +27,7 @@ function App() {
       <Counter></Counter>
       <ParentComponent></ParentComponent>
       <NameListComponent></NameListComponent>
-      <InLineStyleComponent></InLineStyleComponent>       */}
+      <InLineStyleComponent></InLineStyleComponent>      
       <div className='extra-space'></div>
     </div>
   );

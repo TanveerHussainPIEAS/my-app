@@ -8,7 +8,7 @@ export class ClickCountComponent extends Component {
     const {count, IncreamentClick}=this.props;
     return (
       <div>
-        <Button variant="contained" color="primary" onClick={IncreamentClick}>Clicked {count} times </Button>
+        <Button variant="contained" color="secondary" onClick={IncreamentClick}>Clicked {count} times </Button>
       </div>
     )
   }
