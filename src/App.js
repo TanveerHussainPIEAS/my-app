@@ -11,11 +11,15 @@ import ResponsiveAppBar from './Componets/ResponsiveAppBar'
 import ClickCountComponent from './Componets/ClickCountComponent'
 import HoverCountComponent from './Componets/HoverCountComponent'
 import ApiCallsComponent from './Componets/ApiCallsComponent'
+import HookCounterComponent from './Componets/HookCounterComponent'
+import HookCounterTree from './Componets/HookCounterTree'
 
 function App() {
   return (
     <div className="App">
       <ResponsiveAppBar></ResponsiveAppBar>
+      <HookCounterComponent></HookCounterComponent>
+      <HookCounterTree></HookCounterTree>
       <ApiCallsComponent></ApiCallsComponent>
       <ClickCountComponent></ClickCountComponent>
       <HoverCountComponent></HoverCountComponent>
