@@ -9,7 +9,13 @@ function HookCounterUseEffect() {
     useEffect(()=>{
         console.log('Updating-Use Effect()')
         document.title=`Clicked ${count} times`
+
+        return ()=>{
+            //Write clean up code here. Like remove event listeners, subcribtions etc
+            console.log('Unmounting the component.')
+        }
     },[count])
+    //pass empty array to fire useEffect() only once.
   return (
     <div>
         <h1>Hook Counter using UseEffect</h1>
