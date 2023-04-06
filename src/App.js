@@ -14,14 +14,25 @@ import ApiCallsComponent from './Componets/ApiCallsComponent'
 import HookCounterComponent from './Componets/HookCounterComponent'
 import HookCounterTree from './Componets/HookCounterTree'
 import HookCounterUseEffect from './Componets/HookCounterUseEffect'
+import ContextComponentA from './Componets/ContextComponentA'
+import React from 'react';
+export const UserContext= React.createContext()
+export const CompanyContext= React.createContext()
 
 function App() {
   return (
     <div className="App">
       <ResponsiveAppBar></ResponsiveAppBar>      
       <HookCounterComponent></HookCounterComponent>
-      <HookCounterUseEffect></HookCounterUseEffect>
+      <HookCounterUseEffect></HookCounterUseEffect>      
       <HookCounterTree></HookCounterTree>
+
+      <UserContext.Provider value={'Tanveer Hussain'}>
+          <CompanyContext.Provider value={'Cinnova'}>
+          <ContextComponentA></ContextComponentA>
+          </CompanyContext.Provider>          
+      </UserContext.Provider>
+      
       <ApiCallsComponent></ApiCallsComponent>
       <ClickCountComponent></ClickCountComponent>
       <HoverCountComponent></HoverCountComponent>
